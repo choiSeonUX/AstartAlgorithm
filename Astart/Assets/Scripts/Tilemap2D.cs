@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-
 public class Tilemap2D : MonoBehaviour
 {
 
@@ -35,7 +33,7 @@ public class Tilemap2D : MonoBehaviour
         }
     }
   
-    //20퍼센트 무작위 장애물 
+    //20퍼센트 랜덤 장애물 
     public void GenerateObstacle()
     {
         for (int i=0; i < (Width*Height*0.2f); ++i)

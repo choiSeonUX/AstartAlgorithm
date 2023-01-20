@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PathNode : MonoBehaviour
+// 정보를 담은 클래스 
+public class PathNode 
 {
-    private int gCost;
-    private int hCost;
-    private int fCost; 
+    [SerializeField]
+    private GameObject emty;
 
-    public void CalcultateFcost()
+    private bool walkable;
+    private int width; 
+    private int height;
+
+    public PathNode(GameObject _emty, bool _walkable, int _width, int _height)
     {
-        fCost = gCost + hCost; 
+        emty = _emty;
+        walkable = _walkable;
+        width = _width;
+        height = _height; 
     }
 
 

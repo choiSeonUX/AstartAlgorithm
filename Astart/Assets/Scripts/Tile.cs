@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public enum TileType
 {
-   Empty =0, Block, player
+   Empty, Obstacle, player
 }
 public class Tile : MonoBehaviour
 {
